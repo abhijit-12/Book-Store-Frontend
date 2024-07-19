@@ -6,15 +6,15 @@ const Footer = () => {
    <>
    <div>
 
-   <footer class="bg-body-tertiary text-center">
+   <footer className="bg-body-tertiary text-center">
  
-  <div class="container p-4"></div>
+  <div className="container p-4"></div>
   
 
   
-  <div class="text-center p-3">
+  <div className="text-center p-3">
     © 2024 Copyright Abhijit Das:
-    <a class="text-body" href="#"></a>
+    <a className="text-body" href="#"></a>
   </div>
 
 </footer>
