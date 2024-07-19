@@ -10,7 +10,7 @@ const Books = () => {
   useEffect(() => {
     const fetch = async () => {
       await axios
-        .get("http://localhost:1000/api/books/allbooks")
+        .get("https://book-store-backend-dcs4.onrender.com/api/books/allbooks")
         .then((res) => SetData(res.data.books));
     };
     fetch();

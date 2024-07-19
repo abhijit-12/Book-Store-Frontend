@@ -10,7 +10,7 @@ const Bookssection = ({ data }) => {
   useEffect(() => {
     const fetch = async () => {
       await axios
-        .get("http://localhost:1000/api/books/allbooks")
+        .get("https://book-store-backend-dcs4.onrender.com/api/books/allbooks")
         .then((res) => SetData(res.data.books));
     };
     fetch();
@@ -19,7 +19,7 @@ const Bookssection = ({ data }) => {
   const deleteItem = async (id) => {
     console.log("deleting item", id);
     await axios
-      .delete(`http://localhost:1000/api/books/delbooks/${id}`)
+      .delete(`https://book-store-backend-dcs4.onrender.com/api/books/delbooks/${id}`)
       .then((res) => {
         console.log(res.data);
         SetData(Data.filter((data) => data.id !== id));

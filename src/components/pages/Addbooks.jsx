@@ -17,7 +17,7 @@ const Addbooks = () => {
     setData({...Data, [name]: value });
   };
   const submitbook= async (res) => {
-    await axios.post("http://localhost:1000/api/books/add", Data).then((res)=>console.log(res));
+    await axios.post("https://book-store-backend-dcs4.onrender.com/api/books/add", Data).then((res)=>console.log(res));
     setData({
       bookname: "",
       desc: "",
